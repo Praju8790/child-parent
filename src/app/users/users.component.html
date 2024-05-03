@@ -1,0 +1,10 @@
+<app-add-user (userAr)="onUserAdded($event)"></app-add-user>
+
+        <div class="mt-2">
+            <h3>User Lis</h3>
+            <button class="btn btn-danger"(click)="onChanged()">click</button>
+            <app-user *ngFor="let uses of userList" [use]="uses" [name]="name">
+              <p>userName: {{uses}}</p>
+              
+            </app-user>
+        </div>
